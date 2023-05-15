@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="corpo">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+
+            <input type="text" id="result" value="0" readonly />
+            <table>
+                <tr>
+
+                    <td colspan="2"><button class="green" onclick="deleteLastDigit()">&#9003</button></td>
+                    <td><button onclick="clearResult()" class="c">C</button></td>
+                    <td><button class="green" onclick="appendToResult('/')">/</button></td>
+                </tr>
+                <tr>
+
+                    <td><button onclick="appendToResult('7')">7</button></td>
+                    <td><button onclick="appendToResult('8')">8</button></td>
+                    <td><button onclick="appendToResult('9')">9</button></td>
+                    <td><button class="green" onclick="appendToResult('*')">x</button></td>
+                </tr>
+
+                <tr>
+
+                    <td><button onclick="appendToResult('4')">4</button></td>
+                    <td><button onclick="appendToResult('5')">5</button></td>
+                    <td><button onclick="appendToResult('6')">6</button></td>
+                    <td><button class="green" onclick="appendToResult('-')">-</button></td>
+                </tr>
+                <tr>
+
+                    <td><button onclick="appendToResult('1')">1</button></td>
+                    <td><button onclick="appendToResult('2')">2</button></td>
+                    <td><button onclick="appendToResult('3')">3</button></td>
+                    <td><button class="green" onclick="appendToResult('+')">+</button></td>
+                </tr>
+                <tr>
+
+                    <td><button onclick="appendToResult('0')">0</button></td>
+                    <td><button onclick="appendToResult('.')">.</button></td>
+
+                    <td colspan="2"><button class="green" onclick="calculadoraResultado('=')">=</button></td>
+                </tr>
+            </table>
+
+
+
+
+
+        </div>
+
+        <div class="listaresultado">
+
+
+
+            <div class="listaresultado-1">
+                <h1>Resultados</h1>
+
+                <button class="btnlimmpa" id="limparListaBtn">Limpar</button>
+            </div>
+
+            <ul id="resultList">
+
+            </ul>
+
+            <h4 id="somaResult"></h4>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
